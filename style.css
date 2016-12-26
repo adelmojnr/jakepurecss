@@ -1,0 +1,159 @@
+body{
+  display: flex;
+  background-color: #f8c223;
+  justify-content: center;
+}
+
+.container{
+  display: flex;
+  width: 500px;
+  padding-top: 100px;
+  position: relative;
+  justify-content: space-around;
+}
+
+/*Eyes*/
+
+.eye{
+  display: flex;
+  position:relative;
+  width:150px;
+  height:150px;
+  background: #000;
+  border-radius: 50%;
+  justify-content: space-around;
+}
+
+.eye:after{
+  content: "";
+  display: flex;
+  position:absolute;
+  width:115px;
+  height: 115px;
+  background: #fff;
+  border-radius: 50%;
+  top: 6px;
+  left: 22px;
+}
+/*Mustache*/
+.mustache{
+  display: flex;
+  position:absolute;
+  width: 190px;
+  height: 130px;
+  border-radius: 50% 50% 0 0;
+  border: 3px solid #000;
+  border-bottom: 0;
+  margin-top:50px;
+  justify-content: center;
+  overflow: hiddend;
+  background: #f8c223;
+}
+
+.mustache:before{
+  display: flex;
+  content:"";
+  position: absolute;
+  width:60px;
+  height:110px;
+  border: 3px solid #000;
+  border-radius: 0 0 50% 50%;
+  border-top: 0;
+  background: #f8c223;
+  left: -2px;
+  top: 80px;
+}
+
+.mustache:after{
+  content: "";
+  display: flex;
+  border: 3px solid #000;
+  position: absolute;
+  width: 60px;
+  height: 110px;
+  border-top: 0;
+  border-radius: 0 0 50% 50%;
+  left: 128px;
+  top: 80px;
+}
+.nose{
+  display: flex;
+  position: absolute;
+  width:100px;
+  height:70px;
+  border-radius: 50%;
+  background: #000;
+  margin-top: 50px;
+  justify-content: center;
+  z-index: 5;
+}
+
+.mouth{
+  display: flex;
+  position:absolute;
+  width:64px;
+  height: 48px;
+  border: 3px solid #000;
+  border-top: 0;
+  border-radius: 0 0 45% 45%;
+  top: 112px;
+  background: #882828;
+  overflow: hidden;
+  z-index: 4;
+}
+
+.tooth-left{
+  display: flex;
+  position:relative;
+  width: 25px;
+  height: 20px;
+  background: #fff;
+  border: 3px solid #000;
+  border-radius: 45%;
+  top: -9px;
+}
+
+.tooth-center{
+  display: flex;
+  position:relative;
+  width: 30px;
+  height: 20px;
+  background: #fff;
+  border: 3px solid #000;
+  border-radius: 45%;
+  top: -5px;
+  right: -1px;
+
+}
+
+.tooth-right{
+  display: flex;
+  position:relative;
+  width: 25px;
+  height: 20px;
+  background: #fff;
+  border: 3px solid #000;
+  border-radius:  45%;
+  top: -8px;
+  right: -2px;
+}
+
+.tongue{
+  display: flex;
+  position: absolute;
+  width:54px;
+  height: 30px;
+  background: #ff7676;
+  margin-top: 30px;
+  border-radius: 45% ;
+  right:5px;
+  z-index: 10;
+  animation: pulse 0.5s infinite alternate ease-in-out;
+}
+
+/*Keyframe*/
+
+@keyframes pulse{
+  0% {transform: scale(.9);}
+  100% {transform: sclae(1.1)}
+}

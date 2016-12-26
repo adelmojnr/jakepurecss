@@ -15,5 +15,11 @@
   "bugs": {
     "url": "https://github.com/adelmojnr/jakepurecss.github.io/issues"
   },
-  "homepage": "https://github.com/adelmojnr/jakepurecss.github.io#readme"
+  "homepage": "https://github.com/adelmojnr/jakepurecss.github.io#readme",
+  "dependencies": {
+    "gulp": "^3.9.1"
+  },
+  "devDependencies": {
+    "gulp-autoprefixer": "^3.1.1"
+  }
 }

@@ -2,59 +2,57 @@ body{
   display: flex;
   background-color: #f8c223;
   justify-content: center;
+  margin: 0 auto;
 }
 
 .container{
   display: flex;
-  width: 500px;
+  width: 370px;
   padding-top: 100px;
   position: relative;
-  justify-content: space-around;
+  justify-content: space-between;
 }
-
-/*Eyes*/
 
 .eye{
   display: flex;
   position:relative;
-  width:150px;
-  height:150px;
+  width:170px;
+  height:170px;
   background: #000;
   border-radius: 50%;
-  justify-content: space-around;
+  right: 50px
 }
 
 .eye:after{
   content: "";
-  display: flex;
   position:absolute;
-  width:115px;
-  height: 115px;
+  width:125px;
+  height: 125px;
   background: #fff;
   border-radius: 50%;
   top: 6px;
-  left: 22px;
+  left: 25px;
 }
-/*Mustache*/
+
 .mustache{
   display: flex;
   position:absolute;
-  width: 190px;
+  width: 200px;
   height: 130px;
   border-radius: 50% 50% 0 0;
   border: 3px solid #000;
   border-bottom: 0;
   margin-top:50px;
   justify-content: center;
-  overflow: hiddend;
   background: #f8c223;
+  right: 131px;
 }
 
 .mustache:before{
   display: flex;
   content:"";
   position: absolute;
-  width:60px;
+  width:70px;
   height:110px;
   border: 3px solid #000;
   border-radius: 0 0 50% 50%;
@@ -69,7 +67,7 @@ body{
   display: flex;
   border: 3px solid #000;
   position: absolute;
-  width: 60px;
+  width: 70px;
   height: 110px;
   border-top: 0;
   border-radius: 0 0 50% 50%;
@@ -77,21 +75,21 @@ body{
   top: 80px;
 }
 .nose{
-  display: flex;
   position: absolute;
   width:100px;
   height:70px;
   border-radius: 50%;
   background: #000;
-  margin-top: 50px;
+  margin-top: 55px;
   justify-content: center;
   z-index: 5;
+  right: 50px;
 }
 
 .mouth{
   display: flex;
-  position:absolute;
-  width:64px;
+  position:relative;
+  width:74px;
   height: 48px;
   border: 3px solid #000;
   border-top: 0;
@@ -106,7 +104,7 @@ body{
   display: flex;
   position:relative;
   width: 25px;
-  height: 20px;
+  height: 25px;
   background: #fff;
   border: 3px solid #000;
   border-radius: 45%;
@@ -117,7 +115,7 @@ body{
   display: flex;
   position:relative;
   width: 30px;
-  height: 20px;
+  height: 25px;
   background: #fff;
   border: 3px solid #000;
   border-radius: 45%;
@@ -130,7 +128,7 @@ body{
   display: flex;
   position:relative;
   width: 25px;
-  height: 20px;
+  height: 25px;
   background: #fff;
   border: 3px solid #000;
   border-radius:  45%;
@@ -150,8 +148,6 @@ body{
   z-index: 10;
   animation: pulse 0.5s infinite alternate ease-in-out;
 }
-
-/*Keyframe*/
 
 @keyframes pulse{
   0% {transform: scale(.9);}

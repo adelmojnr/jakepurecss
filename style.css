@@ -8,6 +8,7 @@ body{
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+  margin: 0 auto;
 }
 
 .container{
@@ -15,15 +16,14 @@ body{
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  width: 500px;
+  width: 370px;
   padding-top: 100px;
   position: relative;
-  -webkit-justify-content: space-around;
-  -ms-flex-pack: distribute;
-  justify-content: space-around;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
-
-/*Eyes*/
 
 .eye{
   display: -webkit-box;
@@ -31,37 +31,31 @@ body{
   display: -ms-flexbox;
   display: flex;
   position:relative;
-  width:150px;
-  height:150px;
+  width:170px;
+  height:170px;
   background: #000;
   border-radius: 50%;
-  -webkit-justify-content: space-around;
-  -ms-flex-pack: distribute;
-  justify-content: space-around;
+  right: 50px
 }
 
 .eye:after{
   content: "";
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   position:absolute;
-  width:115px;
-  height: 115px;
+  width:125px;
+  height: 125px;
   background: #fff;
   border-radius: 50%;
   top: 6px;
-  left: 22px;
+  left: 25px;
 }
-/*Mustache*/
+
 .mustache{
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   position:absolute;
-  width: 190px;
+  width: 200px;
   height: 130px;
   border-radius: 50% 50% 0 0;
   border: 3px solid #000;
@@ -71,8 +65,8 @@ body{
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  overflow: hiddend;
   background: #f8c223;
+  right: 131px;
 }
 
 .mustache:before{
@@ -82,7 +76,7 @@ body{
   display: flex;
   content:"";
   position: absolute;
-  width:60px;
+  width:70px;
   height:110px;
   border: 3px solid #000;
   border-radius: 0 0 50% 50%;
@@ -100,7 +94,7 @@ body{
   display: flex;
   border: 3px solid #000;
   position: absolute;
-  width: 60px;
+  width: 70px;
   height: 110px;
   border-top: 0;
   border-radius: 0 0 50% 50%;
@@ -108,21 +102,18 @@ body{
   top: 80px;
 }
 .nose{
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   position: absolute;
   width:100px;
   height:70px;
   border-radius: 50%;
   background: #000;
-  margin-top: 50px;
+  margin-top: 55px;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
   z-index: 5;
+  right: 50px;
 }
 
 .mouth{
@@ -130,8 +121,8 @@ body{
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  position:absolute;
-  width:64px;
+  position:relative;
+  width:74px;
   height: 48px;
   border: 3px solid #000;
   border-top: 0;
@@ -149,7 +140,7 @@ body{
   display: flex;
   position:relative;
   width: 25px;
-  height: 20px;
+  height: 25px;
   background: #fff;
   border: 3px solid #000;
   border-radius: 45%;
@@ -163,7 +154,7 @@ body{
   display: flex;
   position:relative;
   width: 30px;
-  height: 20px;
+  height: 25px;
   background: #fff;
   border: 3px solid #000;
   border-radius: 45%;
@@ -179,7 +170,7 @@ body{
   display: flex;
   position:relative;
   width: 25px;
-  height: 20px;
+  height: 25px;
   background: #fff;
   border: 3px solid #000;
   border-radius:  45%;
@@ -203,8 +194,6 @@ body{
   -webkit-animation: pulse 0.5s infinite alternate ease-in-out;
   animation: pulse 0.5s infinite alternate ease-in-out;
 }
-
-/*Keyframe*/
 
 @-webkit-keyframes pulse{
   0% {-webkit-transform: scale(.9);transform: scale(.9);}
